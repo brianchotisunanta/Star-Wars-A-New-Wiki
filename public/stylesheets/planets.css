@@ -1,0 +1,35 @@
+/*PLANETS STYLESHEET*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+}
+
+.planet-title, .planet-information, label {
+  color: blue;
+}
+
+.planet-title {
+  font-size: 70px;
+  margin-bottom: 45px;
+}
+
+.planetContent {
+  /*visibility: hidden !important;*/
+  margin: 10px;
+  width: 100%;
+  color: blue;
+}
+
+.planet-image {
+  width: 600px;
+}
+
+.planet-description-textbox {
+  width: 100%;
+}

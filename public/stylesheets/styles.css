@@ -1,0 +1,444 @@
+/*STYLES.CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  background-color: #000;
+}
+
+/*********************** Lightsaber colors ***********************/
+
+/*Blue*/
+/* #1E74F0 #2049D9*/
+
+/*Green*/
+/*#0cbb06*/
+
+/*Red*/
+/*#CD1249*/
+/*#FF0000*/
+
+/*Purple*/
+/*#7B0FB7*/
+
+
+/***************************Index.html***************************/
+
+h1 {
+  margin-top: 100px;
+}
+
+/*color bars*/
+.fadein{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+
+	animation-duration: 7s;
+	-webkit-animation-duration: 7s;
+
+	animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;
+	}
+	60% {
+		transform: scale(1.1);
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-brand {
+  margin-left: 23px;
+}
+
+.navbar-brand, .navbar-right>ul>li>a {
+  color: white !important;
+}
+
+.navbar-right {
+  margin-right: 23px;
+}
+
+
+
+/************************** buttons: submit, edit, save, delete: **************************/
+.btn-submit, .btn-edit, .btn-save, .btn-delete {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.btn-submit {
+  background-color: #2049D9;     /* blue */
+  color: #fff;
+}
+
+.btn-edit {
+  /*background-color: #7B0FB7;      /* purple  */
+  background-color: #41E4FF;    /*light-blue*/
+  color: #fff;
+  margin-right: 10px;
+}
+
+.btn-save {
+  background-color: #0cbb06;      /* green */
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: #FF0000;      /* red */
+  color: #fff;
+}
+
+/************************** HOVER buttons: submit, edit, save, delete: **************************/
+.btn-submit:hover, .btn-edit:hover, .btn-save:hover, .btn-delete:hover {
+  height: 100px;
+  width: 100px;
+}
+.btn-submit:hover {
+  border-radius: 50%;
+  background-color: #2049D9 ;     /* blue */
+  background: linear-gradient(to bottom right, #2049D9, rgba(0,0,0,0));
+  color: #fff;
+}
+
+.btn-edit:hover {
+  border-radius: 50%;
+  /*background-color: #7B0FB7;      /* purple  */
+  background-color: #41E4FF; /*light-blue*/
+  background: linear-gradient(to bottom right, #41E4FF, rgba(0,0,0,0));
+  color: #fff;
+}
+
+.btn-save:hover {
+  border-radius: 50%;
+  background-color: #0cbb06;      /* green */
+  background: linear-gradient(to bottom right, #0cbb06, rgba(0,0,0,0));
+  color: #fff;
+}
+
+.btn-delete:hover {
+  border-radius: 50%;
+  background-color: #FF0000;      /* red */
+  background: linear-gradient(to bottom right, #FF0000, rgba(0,0,0,0));
+  color: #fff;
+}
+
+
+
+.blue , .red , .green {
+  width: 100%;
+  height: 20px;
+}
+
+.blue {
+  background-color: #2049D9;
+  background: linear-gradient(to bottom right, #2049D9, rgba(0,0,0,0));
+}
+.blue:hover {
+  background-color: #7B0FB7;
+}
+
+.red {
+  background-color: #FF0000;
+  background: linear-gradient(to bottom right, #FF0000, rgba(0,0,0,0));
+}
+.red:hover {
+  background-color: #0cbb06;
+}
+
+.green {
+  background-color: #0cbb06;
+  background: linear-gradient(to bottom right, #0cbb06, rgba(0,0,0,0));
+}
+.green:hover{
+  background-color: #1E74F0;
+}
+
+
+/******************************** Home.html ********************************/
+
+/*Video:*/
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+
+.vid-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33%;
+  background: rgba(0,0,0,0.3);
+  color: #fff; padding: 1rem;
+  font-family: Avenir, Helvetica, sans-serif;
+
+}
+.vid-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0; l
+  ine-height: 1.2;
+}
+.vid-info a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0,0,0,0.5);
+  transition: .6s background;
+  border-bottom: none;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media all and (max-width: 600px) {
+.vid-info {
+  width: 50%;
+  padding: .5rem;
+}
+.vid-info h1 {
+  margin-bottom: .2rem;
+  }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym {
+  display: none;
+  }
+}
+/*Video End*/
+
+
+
+.jumbotron  {
+  animation-duration: 10s;
+  /*animation-name: slidein;*/
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 0.1;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+
+/*footer:*/
+.my-name, .RCA, .month-july {
+  color: #fff;
+  font-size: 20px;
+}
+
+.my-name {
+  margin-right: 222px;
+  color: #2049D9;  /* blue */
+}
+
+.RCA {
+  margin-left: 10px;
+  color: #FF0000;  /* red */
+}
+
+.month-july {
+  margin-right: 10px;
+  color: #0cbb06; /* green */
+}
+
+
+/*crawl*/
+/* Animation properties */
+.star {
+  animation: star 10s ease-out infinite;
+}
+.wars {
+  animation: wars 10s ease-out infinite;
+}
+.byline span {
+  animation: spin-letters 10s linear infinite;
+}
+.byline {
+  animation: move-byline 10s linear infinite;
+}
+
+/* Keyframes */
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes wars {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(0.5em);
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+
+@keyframes spin-letters {
+  0%, 10% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  30% {
+    opacity: 1;
+  }
+  70%, 86% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+  95%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move-byline {
+  0% {
+    transform: translateZ(5em);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+/* Make the 3D work on the container */
+.starwars-demo {
+  perspective: 800px;
+  transform-style: preserve3d;
+}
+
+/* General styles and layout */
+body {
+  background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
+}
+
+.starwars-demo {
+  height: 17em;
+  left: 50%;
+  position: absolute;
+  top: 53%;
+  transform: translate(-50%, -50%);
+  width: 34em;
+}
+
+.byline span {
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+.star, .wars, .byline {
+  position: absolute;
+}
+
+.star {
+  top: -0.75em;
+}
+
+.wars {
+  bottom: -0.5em;
+}
+
+.byline {
+  color: #fff;
+  font-family: "ITC Serif Gothic", Lato;
+  font-size: 2.25em;
+  left: -2em;
+  letter-spacing: 0.4em;
+  right: -2em;
+  text-align: center;
+  text-transform: uppercase;
+  top: 29%;
+}
+
+/*** Media queries for adjusting to different screen sizes ***/
+
+@media only screen and (max-width: 600px) {
+  .starwars-demo {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .starwars-demo {
+    font-size: 7px;
+  }
+}

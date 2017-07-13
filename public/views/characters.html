@@ -1,0 +1,102 @@
+<h1 class="character-title text-center animated infinite flash">Characters</h1>
+<div class="green animated infinite flash"></div>
+
+<!-- Video Background: -->
+<!-- https://www.youtube.com/watch?v=Li0vFxbo3sY -->
+<div class="video-background fadeIn">
+  <div class="video-foreground">
+      <iframe width="100%" height="100%"
+      src="https://www.youtube.com/embed/Li0vFxbo3sY?autoplay=1" frameborder="0" allowfullscreen volume="0">
+      </iframe>
+  </div>
+</div>
+
+<!-- Character Form Field: -->
+<div class="container col-md-12">
+  <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="characterFormHidden" >
+    <h3 class="sectionHeader character-information">Character Information</h3>
+
+    <div class="form-group col-md-12">
+      <label>Character Name</label>
+      <input type="text" class="form-control" placeholder="Character Name" ng-model="name">
+    </div>
+
+    <div class="form-group col-md-3">
+      <label>Gender</label>
+      <input type="text" class="form-control" ng-model="gender">
+    </div>
+
+    <div class="form-group col-md-3">
+      <label>Height</label>
+      <input type="text" class="form-control" placeholder="2.0m" ng-model="height">
+    </div>
+
+    <div class="form-group col-md-3">
+      <label>Species</label>
+      <input type="text" class="form-control" placeholder="Human" ng-model="species">
+    </div>
+
+    <div class="form-group col-md-3">
+      <label>Homeworld</label>
+      <input type="text" class="form-control" placeholder="Corusant" ng-model="homeworld">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label>Weapon</label>
+      <input type="text" class="form-control" placeholder="blaster" ng-model="weapon">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label>Vehicle</label>
+      <input type="text" class="form-control" placeholder="x-wing" ng-model="vehicle">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label>Affliation</label>
+      <input type="text" class="form-control" placeholder="Rebel Alliance" ng-model="affliation">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label>Movie Appearances</label>
+      <input type="text" class="form-control" placeholder="Star Wars: Episode III Revenge of the Sith" ng-model="movieAppearances">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label>Character Description</label>
+      <textarea class="character-description-textbox" name="Character Description" cols="30" rows="10" placeholder="Type description here!!!" ng-model="characterDescription"></textarea>
+      <!-- <input type="text" class="form-control" placeholder="Type description here!!!" ng-model="characterDescription"> -->
+    </div>
+
+    <!-- Submit Button in form field-->
+    <button class="btn btn-submit pull-right"type="button" name="button" ng-click="submitCharacter()" ng-show="submitButton">Submit</button>
+    <!-- Save Button in form field-->
+    <button class="btn btn-save pull-right"type="button" name="button" ng-click="saveCharacter()" ng-show="saveButton">Save</button>
+  </div>
+
+<!-- Character Description: -->
+  <div class="characterContent col-md-12 fadeIn" ng-hide="characterInfoHide" ng-repeat="character in characters">
+    <div class="col-md-6">
+      <img class="character-image text-center" src="{{character.characterImage}}">
+    </div>
+    <div class="character-info col-md-6">
+      <h2 class="character-name">{{character.name}}</h2>
+      <p>Gender: {{character.gender}}</p>
+      <p>Height: {{character.height}}</p>
+      <p>Species: {{character.species}}</p>
+      <p>Homeworld: {{character.homeworld}}</p>
+      <p>Weapon: {{character.weapon}}</p>
+      <p>Vehicle: {{character.vehicle}}</p>
+      <p>Affliation: {{character.affliation}}</p>
+      <p>Movie Appearances: {{character.movieAppearances}}</p>
+      <p class="character-description">Description: {{character.characterDescription}}</p>
+    </div>
+
+  <!-- Buttons on characterContent -->
+    <div class="edit-and-delete-buttons pull-right">
+      <!-- Edit Button -->
+      <button class="btn btn-edit" type="button" name="button" ng-click="updateCharacter(character)">Edit</button>
+      <!-- Delete Button -->
+      <button class="btn btn-delete" type="button" name="button" ng-click="deleteCharacter(character)">Delete</button>
+    </div>
+  </div>
+</div>  <!-- Container End -->

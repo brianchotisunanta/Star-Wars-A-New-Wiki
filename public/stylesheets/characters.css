@@ -1,0 +1,34 @@
+/*CHARACTER STYLESHEET*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+}
+
+.character-title, .character-information, label {
+  color: green;
+}
+
+.character-title {
+  font-size: 70px;
+}
+
+.characterContent {
+  visibility: hidden !important;
+  margin: 10px;
+  width: 100%;
+  color: red;
+}
+
+.character-image {
+  width: 600px;
+}
+
+.character-description-textbox {
+  width: 100%;
+}

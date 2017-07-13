@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wikiStarWars">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Star Wars Project</title>
+
+  <!-- Google Font - Open Sans -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <!-- Google Font - Anton -->
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+
+  <!-- Bootstrap CDN 3.3.7 CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!--********************* CSS starts ***********************-->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./stylesheets/styles.css">
+
+  <!-- Characters CSS -->
+  <link rel="stylesheet" href="./stylesheets/characters.css">
+
+  <!-- Movies CSS -->
+  <link rel="stylesheet" href="./stylesheets/movies.css">
+
+  <!-- Planets CSS -->
+  <link rel="stylesheet" href="./stylesheets/planets.css">
+
+  <!-- Vehicles CSS -->
+  <link rel="stylesheet" href="./stylesheets/vehicles.css">
+
+  <!-- animate.ss -->
+  <link rel="stylesheet" href="./stylesheets/animate.css">
+
+  <!-- animations1.css -->
+  <link rel="stylesheet" href="./stylesheets/animations1.css">
+
+  <!-- star wars intro crawl codepen css-->
+  <link rel="stylesheet" href="./stylesheets/starwarscrawl.css">
+
+
+
+  <!--*********************** CSS ends ***********************-->
+
+<!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  <!-- Angular CDN 1.5.7 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+
+  <!-- Angular UI Router CDN 0.4.2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+</head>
+<body ng-cloak>
+
+<!-- NavBar fadeIn -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="contailer-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="home">Star Wars: A NEW WIKI</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a ui-sref="movies">Movies</a></li>
+          <li><a ui-sref="characters">Characters</a></li>
+          <li><a ui-sref="planets">Planets</a></li>
+          <li><a ui-sref="vehicles">Vehicles</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Angular Injection -->
+  <div ui-view></div>
+
+<!-- module -->
+  <script src="./app.js"></script>
+
+<!-- services -->
+  <script src="./services/charactersService.js"></script>
+  <script src="./services/moviesService.js"></script>
+  <script src="./services/planetsService.js"></script>
+  <script src="./services/vehiclesService.js"></script>
+
+<!-- controllers -->
+  <script src="./controllers/charactersController.js"></script>
+  <script src="./controllers/moviesController.js"></script>
+  <script src="./controllers/planetsController.js"></script>
+  <script src="./controllers/vehiclesController.js"></script>
+
+<!-- javacript files -->
+<script src="./crawlStarWars.js"></script>
+
+<!-- animation -->
+  <script>
+  	$(window).scroll(function() {
+  		$('.characterContent').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+  </script>
+</body>
+</html>
