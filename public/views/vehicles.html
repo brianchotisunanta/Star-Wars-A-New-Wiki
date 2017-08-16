@@ -1,3 +1,69 @@
-<h2>This is the vehicles view</h2>
+<!-- Background video in vehicles.html: Star Wars Episode I - The Phantom Menace: Podrace scene (Part 2 of 3) [1080p HD] -->
+<!-- https://www.youtube.com/watch?v=hjj4MBDpbOY -->
+<div class="video-background fadeIn">
+  <div class="video-foreground">
+      <iframe width="100%" height="100%"
+      src="https://www.youtube.com/embed/hjj4MBDpbOY?autoplay=1" frameborder="0" allowfullscreen volume="0">
+      </iframe>
+  </div>
+</div>
 
-<h1>THERE IS NOTHING IN THE VEHICLE VIEW!!!</h1>
+
+<h1 class="vehicle-title text-center slideExpandUp">Vehicles</h1>
+
+<div class= "blue animated infinite flip"></div>
+
+<!-- Click to Submit Vehicle button to show form field: -->
+<div class="vehicleSubmitButton text-center slideExpandUp">
+  <button class="btn btn-submit-vehicle-form" type="button" ng-show="buttonFormField" ng-click="vehicleSubmitButton()">Enter A New Vehicle</button>
+</div>
+
+
+<div class="container col-md-12">
+  <!-- New Vehicle Submit Form -->
+  <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="vehicleForm">
+    <h3 class="sectionHeader vehicle-information"> Vehicle Information
+    </h3>
+
+    <div class="form-group col-md-12">
+      <label>Vehicle Name</label>
+      <input type="text" class="form-control" ng-model="name">
+    </div>
+
+    <div class="col-md-6">
+      <label>Dimensions</label>
+      <input type="text" class="form-control" ng-model="dimensions">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label>Description</label>
+      <textarea class="vehicle-description-textbox" cols="30" rows="10" ng-model="description"></textarea>
+    </div>
+
+<!-- Submit Button -->
+    <button class="btn btn-submit pull-right" ng-click="submitVehicle()" ng-show="submitButton">Submit</button>
+<!-- Save Button -->
+    <button class="btn btn-save pull-right" ng-click="saveVehicle()" ng-show="saveButton">Save</button>
+  </div>
+<!-- End of New Vehicle Submit Form -->
+
+<!-- Display of Vehicle Content ng-repeat ng-hide -->
+  <div class="vehicleContent col-md-12"  ng-repeat="vehicle in vehicles" ng-hide="vehicleInfo">
+    <div class="col-md-6">  <!-- vehicle image -->
+      <img class="vehicle-image text-center" src="{{vehicle.image}}">
+    </div> <!-- vehicle image End -->
+    <div class="vehicle-info col-md-6">
+      <h2 class="vehicle-id"><span>ID: </span>{{vehicle.id}}</h2>
+      <h2 class="vehicle-name"><span>{{vehicle.name}}</span></h2>
+      <p class="vehicle-dimensions"><span>Dimensions:</span> {{vehicle.dimensions}}</p>
+      <p class="vehicle-description"><span>Description:</span> {{vehicle.description}}</p>
+    </div>
+<!-- Vehicle Content End -->
+
+<!-- Start of Edit & Delete button -->
+    <div class="edit-and-delete-buttons pull-right">
+      <button class="btn btn-edit" type="button" ng-click="updateVehicle(vehicle)">Edit</button>
+      <button class="butn btn-delete" type="button" ng-click="deleteVehicle(vehicle)">delete</button>
+    </div>  <!--End of Edit & Delete button -->
+  </div> <!-- Vehicle Content & Descriptions -->
+</div>  <!-- Container End -->

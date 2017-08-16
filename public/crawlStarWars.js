@@ -8,7 +8,7 @@ byline.innerHTML = '';														// Empty current content
 var span;					// Create variables to create elements
 var letter;
 
-for(i=0;i<bylineArr.length;i++){									// Loop for every letter
+for(i = 0; i < bylineArr.length; i++){									// Loop for every letter
   span = document.createElement("span");					// Create a <span> element
   letter = document.createTextNode(bylineArr[i]);	// Create the letter
   if(bylineArr[i] == ' ') {												// If the letter is a space...

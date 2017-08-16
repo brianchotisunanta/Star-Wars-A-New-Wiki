@@ -4,9 +4,7 @@ angular
 
     moviesService.getMovies()
     .then(function(response){
-
       console.log(response.data.movies);
-
       $scope.movies = response.data.movies
     })
 
@@ -25,7 +23,18 @@ angular
     $scope.image = ""
     $scope.description = ""
 
-// functions:
+// ******************** functions: ********************
+
+  // Shows the Click to Submit Button:
+    $scope.buttonFormField = true;  //ng-show
+
+  //Click to Submit Button (shows character form field):
+    $scope.showFormField = function() {
+      $scope.buttonFormField = false;  //ng-show
+      $scope.movieForm = true;  //ng-show
+      $scope.movieInfo = true;   //ng-hide
+    }
+
     // Submit Movie
     $scope.submitMovie = function() {
       // POST: createMovie() is in moviesService.js:
@@ -41,30 +50,46 @@ angular
       $scope.name= "";
       $scope.image ="";
       $scope.description = "";
+
+      // Movie form field hides:
+      $scope.movieForm = false;   //ng-show
+      // Movies Info Description shows:
+      $scope.movieInfo = false;   //ng-hide
+      //Click to Submit Button shows:
+      $scope.buttonFormField = true;  //ng-show
+
+      console.log($scope.movies);
     }
 
-    // Edit Movie (Update) NOT WORKING
+    // Hides the Movie Information form field:
+    $scope.movieForm = false;  //ng-show
+    $scope.movieInfo = false;    //ng-hide
+
+    // Edit Movie (Update) WORKING
     var currentMovieId = null;
       $scope.submitButton = true;
       $scope.saveButton = false;
 
-      // Update changes the button from Submit to Save
-      $scope.updateMovie = function(m) {
+    // Update changes the button from Submit to Save
+    $scope.updateMovie = function(m) {
 
-        currentMovieId = m.id
-        $scope.name = m.name;
-        $scope.image = m.image;
-        $scope.description = m.description;
+      currentMovieId = m.id
+      $scope.name = m.name;
+      $scope.image = m.image;
+      $scope.description = m.description;
 
-        // hiding submit button, showing save button
-        $scope.submitButton = false;
-        $scope.saveButton = true;
+      // hiding submit button, showing save button
+      $scope.submitButton = false;
+      $scope.saveButton = true;
 
-        //Hide the Movie info when pressing Update button:
-        $scope.movieInfoHide = true;
-        // Shows the Movie info fields:
-        $scope.movieFormHidden = true;
-      }
+      // Hide the Click to Submit Button:
+      $scope.buttonFormField = false;  //ng-show
+
+      //Hide the Movie info when pressing Update button:
+      $scope.movieInfo = true;      //ng-hide
+      // Shows the Movie info fields:
+      $scope.movieForm = true;    //ng-show
+    }
 
     // Save button: (WORKING)
     $scope.saveMovie = function() {
@@ -84,10 +109,13 @@ angular
       $scope.submitButton = true;
       $scope.saveButton = false;
 
+      // Shows the Click to Submit Button:
+      $scope.buttonFormField = true;  //ng-show
+
       //Shows the Movie info when pressing Save button:
-      $scope.movieInfoHide = false;
+      $scope.movieInfo = false;   //ng-hide
       // Hides Movie info field again:
-      $scope.movieFormHidden = false;
+      $scope.movieForm = false;   //ng-show
 
       //Clears the fields
       currentMovieId = null;

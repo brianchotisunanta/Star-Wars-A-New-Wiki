@@ -73,12 +73,20 @@ h1 {
   background-color: black;
 }
 
+a:hover {
+  color: yellow;
+}
+
 .navbar-brand {
   margin-left: 23px;
 }
 
 .navbar-brand, .navbar-right>ul>li>a {
   color: white !important;
+}
+
+.navbar-brand:hover, .navbar-right>ul>li>a:hover {
+  color: yellow !important;
 }
 
 .navbar-right {
@@ -89,8 +97,8 @@ h1 {
 
 /************************** buttons: submit, edit, save, delete: **************************/
 .btn-submit, .btn-edit, .btn-save, .btn-delete {
-  height: 100px;
-  width: 100px;
+  height: 3em;
+  width: 27em;
   border-radius: 20px;
 }
 
@@ -101,7 +109,7 @@ h1 {
 
 .btn-edit {
   /*background-color: #7B0FB7;      /* purple  */
-  background-color: #41E4FF;    /*light-blue*/
+  background-color: #1E74F0;    /*light-blue #41E4FF*/
   color: #fff;
   margin-right: 10px;
 }
@@ -118,33 +126,30 @@ h1 {
 
 /************************** HOVER buttons: submit, edit, save, delete: **************************/
 .btn-submit:hover, .btn-edit:hover, .btn-save:hover, .btn-delete:hover {
-  height: 100px;
-  width: 100px;
+  height: 3em;
+  width: 27em;
+  border-radius: 50%;
 }
 .btn-submit:hover {
-  border-radius: 50%;
   background-color: #2049D9 ;     /* blue */
   background: linear-gradient(to bottom right, #2049D9, rgba(0,0,0,0));
   color: #fff;
 }
 
 .btn-edit:hover {
-  border-radius: 50%;
   /*background-color: #7B0FB7;      /* purple  */
-  background-color: #41E4FF; /*light-blue*/
-  background: linear-gradient(to bottom right, #41E4FF, rgba(0,0,0,0));
+  background-color: #1E74F0; /*light-blue #41E4FF*/
+  background: linear-gradient(to top, #1E74F0, rgba(0,0,0,0));
   color: #fff;
 }
 
 .btn-save:hover {
-  border-radius: 50%;
-  background-color: #0cbb06;      /* green */
-  background: linear-gradient(to bottom right, #0cbb06, rgba(0,0,0,0));
+  background-color: #fff ;      /* green */
+  background: linear-gradient(to top, #0cbb06, rgba(0,0,0,0));
   color: #fff;
 }
 
 .btn-delete:hover {
-  border-radius: 50%;
   background-color: #FF0000;      /* red */
   background: linear-gradient(to bottom right, #FF0000, rgba(0,0,0,0));
   color: #fff;
@@ -158,11 +163,13 @@ h1 {
 }
 
 .blue {
-  background-color: #2049D9;
-  background: linear-gradient(to bottom right, #2049D9, rgba(0,0,0,0));
+  background-color: rgba(1, 9, 255, 0.68);; /*#2049D9*/
+  background: linear-gradient(to bottom right, rgba(1, 9, 255, 0.68), rgba(0,0,0,0));
 }
+
 .blue:hover {
-  background-color: #7B0FB7;
+  background-color: rgba(214, 239, 9, 0.88);
+  background: linear-gradient(to bottom right, rgba(214, 239, 9, 0.88), rgba(0,0,0,0));
 }
 
 .red {

@@ -10,6 +10,28 @@ body {
   font-family: 'Anton', sans-serif;
 }
 
+.characterSubmitButton {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-submit-character-form {
+  height: 100px;
+  width: 200px;
+  background-color: rgba(0, 255, 8, 0.48);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.btn-submit-character-form:hover {
+  border-radius: 20px;
+  height: 100px;
+  width: 800px;
+  background-color: rgba(255, 47, 0, 0.7);
+  color: #fff;
+}
+
 .character-title, .character-information, label {
   color: green;
 }
@@ -22,11 +44,48 @@ body {
   visibility: hidden !important;
   margin: 10px;
   width: 100%;
-  color: red;
+  /*color: red;*/
 }
 
 .character-image {
   width: 600px;
+}
+
+.character-info {
+  color: rgba(255, 47, 0, 0.7);    /*red*/
+}
+
+h2 > span {
+  color: rgba(0, 255, 8, 0.48);    /*green*/
+}
+
+h2 > span:hover {
+  color: yellow;
+}
+
+.character-id:hover {
+  color: #1E74F0;
+}
+
+.character-name {
+  color: rgba(0, 255, 8, 0.48);    /*green*/
+}
+
+.character-name:hover {
+  color: rgba(214, 239, 9, 0.88);    /*yellow*/
+}
+
+p>span {
+  color: rgba(0, 255, 8, 0.48);    /*green*/
+}
+
+p>span:hover {
+  color: rgba(214, 239, 9, 0.88);    /*yellow*/
+}
+
+p:hover {
+  color: white;
+  /*color: #1E74F0;    /*light blue*/*/
 }
 
 .character-description-textbox {

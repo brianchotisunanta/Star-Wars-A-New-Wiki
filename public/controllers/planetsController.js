@@ -21,7 +21,20 @@ angular
     $scope.image =""
     $scope.description = ""
 
-// functions:
+//******************** functions ********************:
+
+//Shows the Click to Submit Button:
+  $scope.buttonFormField = true;  //ng-show
+  $scope.planetForm = false;
+  $scope.planetInfo = true;
+
+  //Click to Submit Button (shows vehicle form field)
+  $scope.planetSubmitButton = function() {
+    $scope.buttonFormField = false; //ng-show
+    $scope.planetForm = true; //ng-show
+    $scope.planetInfo = true; //ng-hide
+  }
+
     // Submit Planet
     $scope.submitPlanet = function() {
       planetsService.createPlanet(new Planet(
@@ -36,10 +49,17 @@ angular
       $scope.name= "";
       $scope.image ="";
       $scope.description = "";
+
+      $scope.planetForm = false;   //ng-show
+      $scope.planetInfo = false;   //ng-hide
+      $scope.buttonFormField = true;    //ng-show
+
+      console.log($scope.planets);
     }
 
     // Hides the Planet Information form field:
-    $scope.planetFormHidden = false;
+    $scope.planetForm = false;    //ng-show
+    $scope.planetInfo = false;    //ng-show
 
 
     // Edit Planet (Update)
@@ -51,18 +71,19 @@ angular
       $scope.updatePlanet = function(p) {
 
         currentPlanetId = p.id
-            $scope.name = p.name;
-            $scope.image = p.image;
-            $scope.description = p.description;
+          $scope.name = p.name;
+          $scope.image = p.image;
+          $scope.description = p.description;
 
         // hiding submit, showing save
         $scope.submitButton = false;
         $scope.saveButton = true;
 
+        $scope.buttonFormField = false;   //ng-show
         //Hide the planet info when pressing Update button:
-        $scope.planetInfoHide = true;
+        $scope.planetInfo = true;   //ng-hide
         // Shows the Planet info fields:
-        $scope.planetFormHidden = true;
+        $scope.planetForm = true;   //ng-show
       }
 
   // Save button: (WORKING)
@@ -80,13 +101,14 @@ angular
         })
 
       // hiding save, showing submit
-      $scope.submitButton = true;
       $scope.saveButton = false;
+      $scope.submitButton = true;
 
+      $scope.buttonFormField = true;
       //Shows the character info when pressing Save button:
-      $scope.planetInfoHide = false;
+      $scope.planetInfo = false;
       // Hides planet info field again:
-      $scope.planetFormHidden = false;
+      $scope.planetForm = false;
 
       //Clears the fields
       currentPlanetId = null;

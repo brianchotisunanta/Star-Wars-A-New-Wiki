@@ -19,5 +19,3 @@ router.put('/:id', charactersController.update);  //callback functions = charact
 router.delete('/:id', charactersController.destroy);    //callback functions = charactersController.destroy
 
 module.exports = router;
-
-//Everything here is good

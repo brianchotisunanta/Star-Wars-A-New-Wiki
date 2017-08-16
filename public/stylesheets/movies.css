@@ -68,11 +68,28 @@ body {
 	}
 }
 
-/*.header-title {
-  visibility: invisible !important;
-  font-size: 200px;
-  color: red;
-}*/
+.movieSubmitButton {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-submit-movie-form {
+  border-radius: 10px;
+  height: 100px;
+  width: 200px;
+  background-color: rgba(255, 47, 0, 0.7);
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+
+.btn-submit-movie-form:hover {
+  border-radius: 20px;
+  height: 100px;
+  width: 800px;
+  background-color: rgba(0, 255, 8, 0.48);
+  color: #fff;
+}
 
 .movie-title, .movie-information, label {
   color: red;
@@ -83,15 +100,35 @@ body {
   margin-bottom: 45px;
 }
 
+.movie-title:hover {
+  color: yellow;
+}
+
 .movieContent {
-  /*visibility: hidden !important;*/
   margin: 10px;
   width: 100%;
   color: white;
 }
 
+.movie-id>span {
+  color: yellow;
+}
+
+.movie-id:hover>span {
+  color: blue;
+}
+
+.movie-id:hover {
+  color: yellow;
+}
+
 .movie-name {
   font-size: 61px;
+  color: yellow;
+}
+
+.movie-name:hover {
+  color: #fff;
 }
 
 .movie-description {
@@ -104,4 +141,8 @@ body {
 
 .movie-description-textbox {
   width: 100%;
+}
+
+.movie-description:hover {
+  color: #1E74F0;  /*light blue*/
 }

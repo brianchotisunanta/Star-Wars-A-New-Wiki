@@ -1,6 +1,3 @@
-<h1 class="character-title text-center animated infinite flash">Characters</h1>
-<div class="green animated infinite flash"></div>
-
 <!-- Video Background: -->
 <!-- https://www.youtube.com/watch?v=Li0vFxbo3sY -->
 <div class="video-background fadeIn">
@@ -11,9 +8,21 @@
   </div>
 </div>
 
-<!-- Character Form Field: -->
+<!-- Movie Title  -->
+<h1 class="character-title text-center">Characters</h1>
+
+<!-- Rotating color bar -->
+<div class="green animated infinite flash"></div>
+
+<!-- Click to Submit Movie button to show form field: -->
+<div class="characterSubmitButton text-center slideExpandUp">
+  <button class="btn-submit-movie-form" type="button" ng-show="buttonFormField" ng-click="showFormField()">Enter A New Movie</button>
+</div>
+
+
 <div class="container col-md-12">
-  <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="characterFormHidden" >
+  <!-- New Character Form Field: ng-show="characterForm" -->
+  <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="characterForm" >
     <h3 class="sectionHeader character-information">Character Information</h3>
 
     <div class="form-group col-md-12">
@@ -64,7 +73,6 @@
     <div class="form-group col-md-12">
       <label>Character Description</label>
       <textarea class="character-description-textbox" name="Character Description" cols="30" rows="10" placeholder="Type description here!!!" ng-model="characterDescription"></textarea>
-      <!-- <input type="text" class="form-control" placeholder="Type description here!!!" ng-model="characterDescription"> -->
     </div>
 
     <!-- Submit Button in form field-->
@@ -73,22 +81,23 @@
     <button class="btn btn-save pull-right"type="button" name="button" ng-click="saveCharacter()" ng-show="saveButton">Save</button>
   </div>
 
-<!-- Character Description: -->
-  <div class="characterContent col-md-12 fadeIn" ng-hide="characterInfoHide" ng-repeat="character in characters">
+<!--Display Character Content ng-hide="characterInfo" -->
+  <div class="characterContent col-md-12 fadeIn" ng-repeat="character in characters" ng-hide="characterInfo">
     <div class="col-md-6">
       <img class="character-image text-center" src="{{character.characterImage}}">
     </div>
     <div class="character-info col-md-6">
+      <h2 class="character-id"><span>ID: </span>{{character.id}}</h2>
       <h2 class="character-name">{{character.name}}</h2>
-      <p>Gender: {{character.gender}}</p>
-      <p>Height: {{character.height}}</p>
-      <p>Species: {{character.species}}</p>
-      <p>Homeworld: {{character.homeworld}}</p>
-      <p>Weapon: {{character.weapon}}</p>
-      <p>Vehicle: {{character.vehicle}}</p>
-      <p>Affliation: {{character.affliation}}</p>
-      <p>Movie Appearances: {{character.movieAppearances}}</p>
-      <p class="character-description">Description: {{character.characterDescription}}</p>
+      <p><span>Gender: </span>{{character.gender}}</p>
+      <p><span>Height: </span> {{character.height}}</p>
+      <p><span>Species: </span> {{character.species}}</p>
+      <p><span>Homeworld: </span> {{character.homeworld}}</p>
+      <p><span>Weapon: </span> {{character.weapon}}</p>
+      <p><span>Vehicle: </span> {{character.vehicle}}</p>
+      <p><span>Affliation: </span> {{character.affliation}}</p>
+      <p><span>Movie Appearances: </span> {{character.movieAppearances}}</p>
+      <p class="character-description"><span>Description: </span> {{character.characterDescription}}</p>
     </div>
 
   <!-- Buttons on characterContent -->
@@ -97,6 +106,6 @@
       <button class="btn btn-edit" type="button" name="button" ng-click="updateCharacter(character)">Edit</button>
       <!-- Delete Button -->
       <button class="btn btn-delete" type="button" name="button" ng-click="deleteCharacter(character)">Delete</button>
-    </div>
-  </div>
+    </div>  <!-- End of Buttons on CharacterContent -->
+  </div>  <!--End of Character Content -->
 </div>  <!-- Container End -->

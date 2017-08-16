@@ -28,7 +28,7 @@ planets.push(new Planet(planetId++, "Kamino", "./images/planet_images/Kamino.jpe
 
 planets.push(new Planet(planetId++, "Naboo", "./images/planet_images/Naboo.jpeg", "An idyllic world close to the border of the Outer Rim Territories, Naboo is inhabited by peaceful humans known as the Naboo, and an indigenous species of intelligent amphibians called the Gungans. Naboo's surface consists of swampy lakes, rolling plains and green hills. Its population centers are beautiful -- Naboo's river cities are filled with classical architecture and greenery, while the underwater Gungan settlements are a beautiful display of exotic hydrostatic bubble technology.") )
 
-planets.push(new Planet(planetId++, "Yavin", "./images/planet_images/Yavin.jpeg", "One of a number of moons orbiting the gas giant Yavin in the galaxy’s Outer Rim, Yavin 4 was a steamy world covered in jungle and forest. It was the location of the principal rebel base early in the Galactic Civil War, and the site from which the Rebellion launched the attack that destroyed the first Death Star – a confrontation known thereafter as the Battle of Yavin.") )
+planets.push(new Planet(planetId++, "Yavin 4", "./images/planet_images/Yavin.jpeg", "One of a number of moons orbiting the gas giant Yavin in the galaxy’s Outer Rim, Yavin 4 was a steamy world covered in jungle and forest. It was the location of the principal rebel base early in the Galactic Civil War, and the site from which the Rebellion launched the attack that destroyed the first Death Star – a confrontation known thereafter as the Battle of Yavin.") )
 
 
 //***************** RESTful API Verb Functions: *****************
@@ -48,7 +48,7 @@ function create(req,res) {
 //GET (One Planet)
 function show(req,res) {
   for (var i = 0; i < planets.length; i++) {
-    if (planets[i].id == req.params.ed) {
+    if (planets[i].id == req.params.id) {
       res.json({planets: planets[i]})
     }
   }

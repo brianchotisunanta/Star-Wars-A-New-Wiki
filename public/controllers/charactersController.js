@@ -43,7 +43,20 @@ angular
   $scope.movieAppearances = "";
   $scope.characterDescription = "";
 
-// Submit button: (NOT WORKING)
+// ******************** functions: ********************
+
+// Shows the Click to Submit Button:
+  $scope.buttonFormField = true;  //ng-show
+
+//Click to Submit Button (shows character form field):
+  $scope.showFormField = function() {
+    $scope.buttonFormField = false;  //ng-show
+    $scope.characterForm = true;  //ng-show
+    $scope.characterInfo = true;   //ng-hide
+  }
+
+
+// Submit button: (Working)
   $scope.submitCharacter = function() {
     charactersService.createCharacter(new Character(
       characterId++,
@@ -76,11 +89,20 @@ angular
     $scope.movieAppearances = "";
     $scope.characterDescription = "";
 
+    // Hide Character form field:
+    $scope.characterForm = false;   //ng-show
+    // Characters Info Description shows:
+    $scope.characterInfo = false;   //ng-hide
+    //Click to Submit Button shows:
+    $scope.buttonFormField = true;  //ng-show
+
     console.log($scope.characters);
   }
 
-  // Hides the Character Information form field:
-  $scope.characterFormHidden = false;
+
+  //Hides the Character information form filed:
+  $scope.characterForm = false;
+  $scope.characterInfo = false;
 
   // Update (EDIT) button: (WORKING)
   var currentCharacterId = null;
@@ -104,14 +126,17 @@ angular
         $scope.movieAppearances = c.movieAppearances;
         $scope.characterDescription = c.characterDescription;
 
-      // hiding submit, showing save
+      // Hide submit, show save buttons:
       $scope.submitButton = false;
       $scope.saveButton = true;
 
+      // Hide the Click to Submit Button:
+      $scope.buttonFormField = false;  //ng-show
+
       //Hide the character info when pressing Update button:
-      $scope.characterInfoHide = true;
+      $scope.characterInfo = true;      //ng-hide
       // Shows the Character info fields:
-      $scope.characterFormHidden = true;
+      $scope.characterForm = true;   //ng-show
     }
 
 
@@ -141,10 +166,13 @@ angular
       $scope.submitButton = true;
       $scope.saveButton = false;
 
+      // Shows the Click to Submit Button:
+      $scope.buttonFormField = true;  //ng-show
+
       //Shows the character info when pressing Save button:
-      $scope.characterInfoHide = false;
+      $scope.characterInfo = false;   //ng-hide
       // Hides chracter info field again:
-      $scope.characterFormHidden = false;
+      $scope.characterForm = false;   //ng-show
 
       //Clears the fields
       currentCharacterId = null;

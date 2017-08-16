@@ -9,3 +9,65 @@
 body {
   font-family: 'Anton', sans-serif;
 }
+
+.vehicleSubmitButton {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn-submit-vehicle-form {
+  height: 100px;
+  width: 200px;
+  background-color: rgba(1, 9, 255, 0.68);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.btn-submit-vehicle-form:hover {
+  border-radius: 20px;
+  height: 100px;
+  width: 800px;
+  background-color: rgba(214, 239, 9, 0.88);    /*yellow*/
+  color: #fff;
+}
+
+.vehicle-title {
+  font-size: 70px;
+  margin-bottom: 45px;
+  color: rgba(1, 9, 255, 0.68);  /*blue*/
+}
+.vehicle-title:hover {
+  color: rgba(214, 239, 9, 0.88);  /*blue*/
+}
+
+.vehicleContent {
+  /*visibility: hidden !important;*/
+  margin: 10px;
+  width: 100%;
+  color: rgba(1, 9, 255, 0.68);;   /*blue*/
+}
+
+.vehicle-title:hover, .vehicle-id>span, .vehicle-name>span, .vehicle-dimensions>span, .vehicle-description>span {
+  color: rgba(214, 239, 9, 0.88);    /*yellow*/
+}
+
+.vehicle-id>span:hover, .vehicle-name>span:hover, .vehicle-dimensions>span:hover, .vehicle-description>span:hover {
+  color: rgba(1, 9, 255, 0.68);   /*blue*/
+}
+
+.vehicle-id, .vehicle-name, .vehicle-dimensions, .vehicle-description {
+  color: rgba(1, 9, 255, 0.68);;    /*blue*/
+}
+
+.vehicle-id:hover, .vehicle-name:hover, .vehicle-dimensions:hover, .vehicle-description:hover {
+  color: red;
+}
+
+.vehicle-image {
+  width: 600px;
+}
+
+.vehicle-description-textbox {
+  width: 100%;
+}
