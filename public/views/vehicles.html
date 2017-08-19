@@ -19,7 +19,7 @@
 </div>
 
 
-<div class="container col-md-12">
+<div class="vehicleForm container col-md-12">
   <!-- New Vehicle Submit Form -->
   <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="vehicleForm">
     <h3 class="sectionHeader vehicle-information"> Vehicle Information
@@ -27,28 +27,28 @@
 
     <div class="form-group col-md-12">
       <label>Vehicle Name</label>
-      <input type="text" class="form-control" ng-model="name">
+      <input type="text" class="form-control" placeholder="Ex: X-Wing" ng-model="name">
     </div>
 
     <div class="col-md-6">
       <label>Dimensions</label>
-      <input type="text" class="form-control" ng-model="dimensions">
+      <input type="text" class="form-control" placeholder="Ex: 1.7m" ng-model="dimensions">
     </div>
 
     <div class="form-group col-md-12">
       <label>Description</label>
-      <textarea class="vehicle-description-textbox" cols="30" rows="10" ng-model="description"></textarea>
+      <textarea class="vehicle-description-textbox" cols="30" rows="10" placeholder="Type description here!!!" ng-model="description"></textarea>
     </div>
 
 <!-- Submit Button -->
-    <button class="btn btn-submit pull-right" ng-click="submitVehicle()" ng-show="submitButton">Submit</button>
+    <button class="btn btn-submit col-md-12 pull-right" ng-click="submitVehicle()" ng-show="submitButton">Submit</button>
 <!-- Save Button -->
-    <button class="btn btn-save pull-right" ng-click="saveVehicle()" ng-show="saveButton">Save</button>
+    <button class="btn btn-save col-md-12 pull-right " ng-click="saveVehicle()" ng-show="saveButton">Save</button>
   </div>
 <!-- End of New Vehicle Submit Form -->
 
 <!-- Display of Vehicle Content ng-repeat ng-hide -->
-  <div class="vehicleContent col-md-12"  ng-repeat="vehicle in vehicles" ng-hide="vehicleInfo">
+  <div class="vehicleContent col-md-12 fadeIn"  ng-repeat="vehicle in vehicles" ng-hide="vehicleInfo">
     <div class="col-md-6">  <!-- vehicle image -->
       <img class="vehicle-image text-center" src="{{vehicle.image}}">
     </div> <!-- vehicle image End -->

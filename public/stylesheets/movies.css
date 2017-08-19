@@ -91,6 +91,10 @@ body {
   color: #fff;
 }
 
+.movieForm {
+  margin-bottom: 300px;
+}
+
 .movie-title, .movie-information, label {
   color: red;
 }

@@ -32,6 +32,10 @@ body {
   color: #fff;
 }
 
+.vehicleForm {
+  margin-bottom: 300px;
+}
+
 .vehicle-title {
   font-size: 70px;
   margin-bottom: 45px;
@@ -70,4 +74,9 @@ body {
 
 .vehicle-description-textbox {
   width: 100%;
+}
+
+/* So the content list doesnt touch the navbar-bottom: */
+.movieContent, .characterContent, .planetContent, .vehicleContent {
+  margin-bottom: 200px;
 }

@@ -32,12 +32,20 @@ body {
   color: #fff;
 }
 
+.characterForm {
+  margin-bottom: 300px;
+}
+
 .character-title, .character-information, label {
   color: green;
 }
 
 .character-title {
   font-size: 70px;
+}
+
+.character-title:hover {
+  color: red;
 }
 
 .characterContent {
