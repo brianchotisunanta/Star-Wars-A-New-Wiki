@@ -334,29 +334,9 @@ a:hover {
   }
 }
 
-/*footer:*/
-.my-name, .RCA, .month-july {
-  color: #fff;
-  font-size: 20px;
-}
-
-.my-name {
-  margin-right: 222px;
-  color: #2049D9;  /* blue */
-}
-
-.RCA {
-  margin-left: 10px;
-  color: #FF0000;  /* red */
-}
-
-.month-july {
-  margin-right: 10px;
-  color: #0cbb06; /* green */
-}
 
 
-/*crawl*/
+/****************** Star Wars crawl ******************/
 /* Animation properties */
 .star {
   animation: star 10s ease-out infinite;
