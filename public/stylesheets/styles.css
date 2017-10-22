@@ -175,6 +175,7 @@ a:hover {
 .btn-delete {
   background-color: #FF0000;      /* red */
   color: #fff;
+  margin-bottom: 10px;
 }
 
 /************************** HOVER buttons: submit, edit, save, delete: **************************/
