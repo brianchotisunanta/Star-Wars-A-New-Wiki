@@ -10,7 +10,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: "./views/home.html",
     controller: "homeController"
     })
-      .state("characters", {
+
+    .state("characters", {
     url: "/characters",
     templateUrl: "./views/characters.html",
     controller: "charactersController"

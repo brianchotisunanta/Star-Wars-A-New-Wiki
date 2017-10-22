@@ -116,6 +116,7 @@ a:hover {
   /*centers navbar text End */
   color: #1E74F0;  /*blue*/
   font-size: 20px;
+  margin-top: -4px;
 }
 
 #footer:hover {
@@ -131,6 +132,7 @@ a:hover {
   color: white;
   padding-top: 44px;
   font-size: 10px;
+  margin-top: -18px;
 }
 
 #disclaimer:hover {
@@ -162,6 +164,7 @@ a:hover {
   background-color: #1E74F0;    /*light-blue #41E4FF*/
   color: #fff;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-save {

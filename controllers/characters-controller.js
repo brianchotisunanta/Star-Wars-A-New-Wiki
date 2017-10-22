@@ -68,7 +68,7 @@ function update(req, res) {
   }
 }
 
-// NOT WORKING
+
 //DELETE (destroy)  (Action = destroy) (character NOT characters)
 function destroy(req, res){
   for (var i = 0; i < characters.length; i++) {
