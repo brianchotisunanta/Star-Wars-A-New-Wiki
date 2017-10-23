@@ -71,7 +71,7 @@ angular
       $scope.submitButton = true;
       $scope.saveButton = false;
 
-      //Update changes the button from submit to save:
+//Update changes the button from submit to save:
     $scope.updateVehicle = function(v) {
 
       currentVehicleId = v.id;
@@ -125,7 +125,7 @@ angular
       $scope.description = "";
     }
 
-//Delete button: 
+//Delete button:
     $scope.deleteVehicle = function(vehicle) {
       vehiclesService.deleteVehicle(vehicle)
         .then(function(response) {
