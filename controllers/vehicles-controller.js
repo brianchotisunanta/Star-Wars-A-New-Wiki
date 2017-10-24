@@ -24,6 +24,8 @@ vehicles.push(new Vehicle(vehicleId++, "PODRACER", "./images/vehicles_images/Pod
 
 vehicles.push(new Vehicle(vehicleId++, "SPEEDER BIKE", "./images/vehicles_images/Speeder-Bike.jpeg", "3.2m", "Speeder bikes are common sights throughout the galaxy, with manufacturers turning out both civilian and military models. One of the best-known speeder bikes is the Aratech 74-Z, which saw service during the Clone Wars and remained a mainstay of Imperial forces during the Galactic Civil War. All speeder bikes are capable of high-speed travel and require skill and fast reflexes."))
 
+vehicles.push(new Vehicle(vehicleId++, "DEATH STAR II", "./images/vehicles_images/Death-Star-II.jpeg", "unknown", "Hoping to crush the Rebellion once and for all, the Empire began construction of a second dreaded Death Star near Endor. But the project ran behind schedule; Death Star II was only half-finished, and the Emperor himself visited to oversee its completion."))
+
 //***************** RESTful API Verb Functions: *****************
 
 // GET (ALL Vehicles)
