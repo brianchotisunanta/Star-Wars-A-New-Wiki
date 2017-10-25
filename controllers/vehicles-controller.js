@@ -26,6 +26,7 @@ vehicles.push(new Vehicle(vehicleId++, "SPEEDER BIKE", "./images/vehicles_images
 
 vehicles.push(new Vehicle(vehicleId++, "DEATH STAR II", "./images/vehicles_images/Death-Star-II.jpeg", "unknown", "Hoping to crush the Rebellion once and for all, the Empire began construction of a second dreaded Death Star near Endor. But the project ran behind schedule; Death Star II was only half-finished, and the Emperor himself visited to oversee its completion."))
 
+vehicles.push(new Vehicle(vehicleId++, "DARTH VADER'S TIE FIGHTER", "./images/vehicles_images/vaders-tie-fighter.jpeg", "9.2m", "Darth Vader piloted this distinctive experimental TIE fighter above the first Death Star, using its blaster cannons and his uncanny abilities with the Force to blast Rebel starfighters into glittering fragments."))
 //***************** RESTful API Verb Functions: *****************
 
 // GET (ALL Vehicles)
