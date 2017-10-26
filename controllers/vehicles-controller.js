@@ -27,6 +27,11 @@ vehicles.push(new Vehicle(vehicleId++, "SPEEDER BIKE", "./images/vehicles_images
 vehicles.push(new Vehicle(vehicleId++, "DEATH STAR II", "./images/vehicles_images/Death-Star-II.jpeg", "unknown", "Hoping to crush the Rebellion once and for all, the Empire began construction of a second dreaded Death Star near Endor. But the project ran behind schedule; Death Star II was only half-finished, and the Emperor himself visited to oversee its completion."))
 
 vehicles.push(new Vehicle(vehicleId++, "DARTH VADER'S TIE FIGHTER", "./images/vehicles_images/vaders-tie-fighter.jpeg", "9.2m", "Darth Vader piloted this distinctive experimental TIE fighter above the first Death Star, using its blaster cannons and his uncanny abilities with the Force to blast Rebel starfighters into glittering fragments."))
+
+vehicles.push(new Vehicle(vehicleId++, "IMPERIAL STAR DESTROYER","./images/vehicles_images/Star-Destroyer.jpeg", "1600.0m", "The wedge-shaped Imperial Star Destroyer is a capital ship bristling with weapons emplacements. Turbolasers and tractor beam projectors dot its surface. Its belly hangar bay can launch TIE fighters, boarding craft, land assault units, hyperspace probes, or be used to hold captured craft. In the days of the Empire, its bustling bridge would be staffed by the finest crewers in the Imperial starfleet. Its presence in a system mark matters of extreme Imperial import. Though, as is typical of the Empire, not even the Star Destroyer was enough to sate the Imperial hunger for displays of power. Larger vessels, such as the Super Star Destroyer, dwarf even these giants."))
+
+
+
 //***************** RESTful API Verb Functions: *****************
 
 // GET (ALL Vehicles)
