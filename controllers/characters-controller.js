@@ -36,6 +36,8 @@ characters.push(new Character(characterId++, "./images/character_images/Anakin-S
 
 characters.push(new Character(characterId++, "./images/character_images/Padme-Amidala.jpeg", "PADMÉ AMIDALA", "Female", "1.65m", "Human", "Naboo", "Unknown", "Naboo N-1 Starfighter, Naboo Royal Starship, Naboo Royal Cruiser", "Galactic Republic, Galactic Senate", "Star Wars: Episode I The Phantom Menace, Star Wars: Episode II Attack of the Clones, Star Wars: Episode III Revenge of the Sith", "Padmé Amidala was a courageous, hopeful leader, serving as Queen and then Senator of Naboo -- and was also handy with a blaster. Despite her ideals and all she did for the cause of peace, her secret, forbidden marriage to Jedi Anakin Skywalker would prove to have dire consequences for the galaxy."))
 
+characters.push(new Character(characterId++, "./images/character_images/Qui-Gon-Jinn.jpeg", "QUI-GON JINN", "Male", "1.93m", "Human", "Unknown", "Lightsaber", "Unknown", "Jedi Order", "Star Wars: Episode I The Phantom Menace", "A venerable if maverick Jedi Master, Qui-Gon Jinn was a student of the living Force. Qui-Gon lived for the moment, espousing a philosophy of 'feel, don't think -- use your instincts.' On Tatooine, Qui-Gon discovered a young slave boy named Anakin Skywalker who was strong in the Force. Sensing the boy's potential, Qui-Gon liberated Anakin from slavery. The Jedi Master presented Anakin to the Jedi Council, but they deemed the boy too old to begin training and dangerously full of fear and anger. They refused to allow Qui-Gon to train Anakin, but rescinded their decision to fulfill Qui-Gon's dying wish."))
+
 
 //***************** RESTful API Verb Functions: *****************
 
