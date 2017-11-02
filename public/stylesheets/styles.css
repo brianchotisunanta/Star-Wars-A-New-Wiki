@@ -71,6 +71,11 @@ h1 {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.72)
+  /*background: url(//cssanimation.rocks/demo/starwars/images/bg.jpg);*/
+}
+
+.navbar-fixed-top {
+  border: none;  /*gets rid of white bottom border on navbar*/
 }
 
 a:hover {
@@ -78,11 +83,11 @@ a:hover {
 }
 
 .navbar-default .navbar-brand {
-    color: white;
+  color: white !important;
 }
 
 .navbar-default .navbar-brand:hover {
-    color: yellow;
+  color: yellow !important;
 }
 
 .navbar-brand {
@@ -103,7 +108,12 @@ a:hover {
 
 .navbar-fixed-bottom {
   height: 50px;
-  padding-top: 68px;
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+.navbar-inverse {
+    border-color: #000;
 }
 
 #footer {
@@ -117,6 +127,7 @@ a:hover {
   color: #1E74F0;  /*blue*/
   font-size: 20px;
   margin-top: -4px;
+  padding-top: 10px;
 }
 
 #footer:hover {
@@ -130,9 +141,11 @@ a:hover {
   left: 0;
   top: 0;
   color: white;
-  padding-top: 44px;
+  padding-top: 57px;
   font-size: 10px;
   margin-top: -18px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #disclaimer:hover {
@@ -148,15 +161,17 @@ a:hover {
 
 
 /************************** buttons: submit, edit, save, delete: **************************/
-.btn-submit, .btn-edit, .btn-save, .btn-delete {
+/*.btn-submit, .btn-save,*/
+.btn-edit, .btn-delete {
   height: 3em;
-  width: 27em;
+  width: 23em;
   border-radius: 20px;
 }
 
 .btn-submit {
   background-color: #2049D9;     /* blue */
   color: #fff;
+  border-radius: 20px;
 }
 
 .btn-edit {
@@ -170,6 +185,7 @@ a:hover {
 .btn-save {
   background-color: #0cbb06;      /* green */
   color: #fff;
+  border-radius: 20px;
 }
 
 .btn-delete {
@@ -179,9 +195,10 @@ a:hover {
 }
 
 /************************** HOVER buttons: submit, edit, save, delete: **************************/
-.btn-submit:hover, .btn-edit:hover, .btn-save:hover, .btn-delete:hover {
+/*.btn-submit:hover, .btn-save:hover, */
+.btn-edit:hover, .btn-delete:hover {
   height: 3em;
-  width: 27em;
+  width: 23em;
   border-radius: 50%;
 }
 .btn-submit:hover {

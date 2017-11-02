@@ -40,9 +40,9 @@
     </div>
 
     <!-- Submit Button ng-show="submitButton" -->
-    <button class="btn btn-submit col-md-12 pull-right"type="button" name="button" ng-click="submitMovie()" ng-show="submitButton" >Submit</button>
+    <button class="btn btn-submit btn-block" type="button" name="button" ng-click="submitMovie()" ng-show="submitButton" >Submit</button>
     <!-- Save Button ng-show="saveButton" -->
-    <button class="btn btn-save col-md-12 pull-right"type="button" name="button" ng-click="saveMovie()" ng-show="saveButton" >Save</button>
+    <button class="btn btn-save btn-block" type="button" name="button" ng-click="saveMovie()" ng-show="saveButton" >Save</button>
   </div>
 
 <!--Display Movie Content ng-hide="movieInfo" -->
@@ -54,13 +54,13 @@
       <h2 class="movie-id"><span>ID: </span>{{movie.id}}</h2>
       <h2 class="movie-name">{{movie.name}}</h2>
       <p class="movie-description">{{movie.description}}</p>
-    </div>
-    <!-- Buttons on movieContent -->
+      <!-- Buttons on movieContent -->
       <div class="edit-and-delete-buttons pull-right">
         <!-- Edit Button -->
         <button class="btn btn-edit" type="button" name="button" ng-click="updateMovie(movie)">Edit</button>
         <!-- Delete Button -->
         <button class="btn btn-delete" type="button" name="button" ng-click="deleteMovie(movie)">Delete</button>
       </div>    <!-- End of Buttons on movieContent -->
+    </div>
   </div> <!--End of Movie Content -->
 </div> <!-- Container End -->

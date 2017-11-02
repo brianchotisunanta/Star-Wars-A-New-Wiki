@@ -32,9 +32,9 @@
       <textarea class="planet-description-textbox" name="Planet Description" cols="30" rows="10" placeholder="Type description here!!!" ng-model="description"></textarea>
     </div>
     <!-- Submit Button ng-show="submitButton" -->
-    <button class="btn btn-submit col-md-12 pull-right"type="button" name="button" ng-click="submitPlanet()" ng-show="submitButton" >Submit</button>
+    <button class="btn btn-submit btn-block" type="button" name="button" ng-click="submitPlanet()" ng-show="submitButton" >Submit</button>
     <!-- Save Button ng-show="saveButton" -->
-    <button class="btn btn-save col-md-12 pull-right"type="button" name="button" ng-click="savePlanet()" ng-show="saveButton">Save</button>
+    <button class="btn btn-save btn-block" type="button" name="button" ng-click="savePlanet()" ng-show="saveButton">Save</button>
   </div>
 
 <!-- Planet image, name, description: -->
@@ -46,13 +46,13 @@
       <h2 class="planet-id"><span>ID: </span>{{planet.id}}</h2>
       <h2 class="planet-name"><span>{{planet.name}}</span></h2>
       <p class="planet-description"><span>Description: </span> {{planet.description}}</p>
-    </div>
-    <!-- Buttons on planetContent -->
+      <!-- Buttons on planetContent -->
       <div class="edit-and-delete-buttons pull-right">
         <!-- Edit Button -->
         <button class="btn btn-edit" type="button" name="button" ng-click="updatePlanet(planet)">Edit</button>
         <!-- Delete Button -->
         <button class="btn btn-delete" type="button" name="button" ng-click="deletePlanet(planet)">Delete</button>
       </div>
+    </div>
   </div>
 </div> <!-- Container End -->

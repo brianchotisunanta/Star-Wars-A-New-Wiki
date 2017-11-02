@@ -41,9 +41,9 @@
     </div>
 
 <!-- Submit Button -->
-    <button class="btn btn-submit col-md-12 pull-right" ng-click="submitVehicle()" ng-show="submitButton">Submit</button>
+    <button class="btn btn-submit btn-block" ng-click="submitVehicle()" ng-show="submitButton">Submit</button>
 <!-- Save Button -->
-    <button class="btn btn-save col-md-12 pull-right " ng-click="saveVehicle()" ng-show="saveButton">Save</button>
+    <button class="btn btn-save btn-block" ng-click="saveVehicle()" ng-show="saveButton">Save</button>
   </div>
 <!-- End of New Vehicle Submit Form -->
 
@@ -57,13 +57,13 @@
       <h2 class="vehicle-name"><span>{{vehicle.name}}</span></h2>
       <p class="vehicle-dimensions"><span>Dimensions:</span> {{vehicle.dimensions}}</p>
       <p class="vehicle-description"><span>Description:</span> {{vehicle.description}}</p>
+      <!-- Start of Edit & Delete button -->
+      <div class="edit-and-delete-buttons pull-right">
+        <!-- Edit Button -->
+        <button class="btn btn-edit" type="button" ng-click="updateVehicle(vehicle)">Edit</button>
+        <!-- Delete Button -->
+        <button class="btn btn-delete" type="button" ng-click="deleteVehicle(vehicle)">delete</button>
+      </div>  <!--End of Edit & Delete button -->
     </div>
-<!-- Vehicle Content End -->
-
-<!-- Start of Edit & Delete button -->
-    <div class="edit-and-delete-buttons pull-right">
-      <button class="btn btn-edit" type="button" ng-click="updateVehicle(vehicle)">Edit</button>
-      <button class="btn btn-delete" type="button" ng-click="deleteVehicle(vehicle)">delete</button>
-    </div>  <!--End of Edit & Delete button -->
-  </div> <!-- Vehicle Content & Descriptions -->
+  </div> <!-- Vehicle Content & Descriptions End -->
 </div>  <!-- Container End -->

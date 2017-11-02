@@ -16,6 +16,9 @@
   <!-- Bootstrap CDN 3.3.7 CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+  <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
@@ -46,10 +49,15 @@
   <!-- animations1.css -->
   <link rel="stylesheet" href="./stylesheets/animations1.css">
 
+  <!-- star wars intro crawl codepen css-->
+  <!-- <link rel="stylesheet" href="./stylesheets/starwarscrawl.css"> -->
+
+
+
   <!--*********************** CSS ends ***********************-->
 
 <!-- jQuery -->
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> -->
 
   <!-- Angular CDN 1.5.7 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
@@ -61,53 +69,57 @@
 <body ng-cloak>
 
 <!-- NavBar-top fadeIn -->
-  <nav class="navbar navbar-default navbar-fixed-top expandUp">
-    <div class="contailer-fluid">
-        <a class="navbar-brand" ui-sref="home">Star Wars: A NEW WIKI</a>
+<nav class="navbar navbar-default navbar-fixed-top expandUp">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="home">Star Wars: A NEW WIKI</a>
+    </div>
 
-      <!-- Three-Bar menu button viewed with width = <768 -->
-        <button class="navbar-toggle dropdown-toogle" data-toggle="collapse" data-target=".navHeaderCollapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>    <!-- Three-Bar menu end -->
-
-        <div class="collapse navbar-collapse navHeaderCollapse">
-          <ul class="nav navbar-nav navbar-right" id="navbar-list">
-            <li><a ui-sref="movies">Movies</a></li>
-            <li><a ui-sref="characters">Characters</a></li>
-            <li><a ui-sref="planets">Planets</a></li>
-            <li><a ui-sref="vehicles">Vehicles</a></li>
-          </ul>
-        </div>  <!-- navHeader Collapse End -->
-    </div>  <!-- Container End -->
-  </nav>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navHeaderCollapse">
+      <ul class="nav navbar-nav navbar-right text-center" id="navbar-list">
+        <li><a ui-sref="movies">Movies</a></li>
+        <li><a ui-sref="characters">Characters</a></li>
+        <li><a ui-sref="planets">Planets</a></li>
+        <li><a ui-sref="vehicles">Vehicles</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 <!-- Navbar-bottom -->
 <nav class="navbar navbar-inverse navbar-fixed-bottom expandUp">
   <div class="container">
+
     <p id="disclaimer">The use of Star Wars and its associated movies, characters, planets, and vehicles was for personal use only. I claim no ownership over Star Wars.</p>
     <p class="navbar-text" id="footer">Designed by Brian Chotisunanta</p>
   </div>
 </nav>
 
 <!-- Angular Injection -->
-  <div ui-view></div>
+<div ui-view></div>
 
 <!-- module -->
-  <script src="./app.js"></script>
+<script src="./app.js"></script>
 
 <!-- services -->
-  <script src="./services/charactersService.js"></script>
-  <script src="./services/moviesService.js"></script>
-  <script src="./services/planetsService.js"></script>
-  <script src="./services/vehiclesService.js"></script>
+<script src="./services/charactersService.js"></script>
+<script src="./services/moviesService.js"></script>
+<script src="./services/planetsService.js"></script>
+<script src="./services/vehiclesService.js"></script>
 
 <!-- controllers -->
-  <script src="./controllers/charactersController.js"></script>
-  <script src="./controllers/moviesController.js"></script>
-  <script src="./controllers/planetsController.js"></script>
-  <script src="./controllers/vehiclesController.js"></script>
+<script src="./controllers/charactersController.js"></script>
+<script src="./controllers/moviesController.js"></script>
+<script src="./controllers/planetsController.js"></script>
+<script src="./controllers/vehiclesController.js"></script>
 
 <!-- javacript files -->
 <script src="./crawlStarWars.js"></script>
