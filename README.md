@@ -1,6 +1,6 @@
 # Star-Wars-A-New-Wiki
 
-This is my Third (Final) Project at Redwood Code Academy. This is a full-stack application utilizing HTML, CSS, JavaScript, Bootstrap, jQuery and Angular.js on the front-end side, and Node.js on the back-end side. I created a light version of a wikipedia containing Star Wars movies, characters, planets, and vehicles.
+This is my Third (Final) Project at Redwood Code Academy. This is a full-stack application utilizing HTML, CSS, JavaScript, Bootstrap, jQuery and Angular.js on the front-end side, and Express.js and Node.js on the back-end side. I created a light version of a wikipedia containing Star Wars movies, characters, planets, and vehicles.
 
 ![swanw ss1](https://user-images.githubusercontent.com/24735848/32698840-b3a12bdc-c760-11e7-9a7e-ed6775efd618.png)
 ![swanw ss2](https://user-images.githubusercontent.com/24735848/32698841-b3b80104-c760-11e7-8ca0-123b0abc6387.png)
