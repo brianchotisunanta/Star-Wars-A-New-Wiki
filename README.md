@@ -21,3 +21,14 @@ This is my Third (Final) Project at Redwood Code Academy. This is a full-stack a
 ![swanw ss17](https://user-images.githubusercontent.com/24735848/32698857-b54cdb16-c760-11e7-80ad-c508383e21b3.png)
 ![swanw ss18](https://user-images.githubusercontent.com/24735848/32698858-b56363c2-c760-11e7-9122-5232f8d6aed7.png)
 ![swanw ss19](https://user-images.githubusercontent.com/24735848/32698859-b57f0ed8-c760-11e7-85e7-75b1412901d2.png)
+
+## Technologies:
+#### HTML5
+#### CSS3
+#### CSS Animations
+#### JavaScript
+#### Bootstrap
+#### jQuery
+#### AngularJS
+#### Express
+#### Node.js
