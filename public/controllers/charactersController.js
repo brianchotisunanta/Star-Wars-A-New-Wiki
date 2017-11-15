@@ -11,7 +11,7 @@ angular
   })
 
 // var characters = [];
-  var characterId = 7;
+  var characterId = 11;   //new character.id will start at 11
 
   var Character = function (id, characterImage, name, gender, height, species, homeworld, weapon, vehicle, affliation, movieAppearances, characterDescription) {
     this.id = id;

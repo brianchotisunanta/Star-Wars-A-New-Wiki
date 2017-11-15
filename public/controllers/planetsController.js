@@ -8,7 +8,7 @@ angular
       $scope.planets = response.data.planets
     })
 
-    var planetId = 10;
+    var planetId = 10; // new planet.id will start at 10
 
     var Planet = function(id, name, image, description) {
       this.id = id;

@@ -8,7 +8,7 @@ angular
     $scope.vehicles = response.data.vehicles
   })
 
-  var vehicleId = 4 //new vehicle.id starts at 6
+  var vehicleId = 9 //new vehicle.id will starts at 9
 
   var Vehicle = function(id, name, image, dimensions, description) {
     this.id = id;

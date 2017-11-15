@@ -8,7 +8,7 @@ angular
       $scope.movies = response.data.movies
     })
 
-    var movieId = 6;
+    var movieId = 6; //new movie.id will start at 6
 
     var Movie = function(id, name, image, description) {
       this.id = id;
