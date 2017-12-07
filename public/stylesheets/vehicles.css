@@ -72,6 +72,16 @@ body {
   width: 600px;
 }
 
+@media only screen
+  and (min-width: 300px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .vehicle-image {
+      width: 300px;
+      margin-right: 40px;
+    }
+}
+
 .vehicle-description-textbox {
   width: 100%;
 }
