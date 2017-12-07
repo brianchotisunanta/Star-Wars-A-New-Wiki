@@ -59,6 +59,16 @@ body {
   width: 600px;
 }
 
+@media only screen
+  and (min-width: 300px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .character-image {
+      width: 300px;
+      margin-right: 40px;
+    }
+}
+
 .character-info {
   color: rgba(255, 47, 0, 0.7);    /*red*/
 }
