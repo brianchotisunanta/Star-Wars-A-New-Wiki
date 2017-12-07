@@ -139,8 +139,26 @@ body {
   font-size: 25px;
 }
 
+
 .movie-image {
   width: 600px;
+}
+
+@media only screen
+  and (min-width: 300px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .movie-name {
+      font-size: 30px;
+      color: yellow;
+    }
+    .movie-description {
+      font-size: 12px;
+    }
+    .movie-image {
+      width: 300px;
+      margin-right: 40px;
+    }
 }
 
 .movie-description-textbox {
