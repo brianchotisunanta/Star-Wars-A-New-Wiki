@@ -60,6 +60,16 @@ body {
   width: 600px;
 }
 
+@media only screen
+  and (min-width: 300px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .planet-image {
+      width: 300px;
+      margin-right: 40px;
+    }
+}
+
 .planet-id>span, .planet-name>span, .planet-description>span{
   color: blue;
 }
