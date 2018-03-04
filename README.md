@@ -1,6 +1,6 @@
 # Star-Wars-A-New-Wiki
 
-Check out my app on Heroku: [Star Wars: A New Wiki on Heroku.com](https://star-wars-wiki.herokuapp.com/#/ "Star Wars: A New Wiki")
+**_Check out my app on Heroku:_** **[Star Wars: A New Wiki on Heroku.com](https://star-wars-wiki.herokuapp.com/#/ "Star Wars: A New Wiki")**
 
 This is a *_full-stack web application_* that utilizes **HTML5, CSS3, JavaScript, Bootstrap, jQuery** and **Angular.js** on the **front-end**, and **Express.js** and **Node.js** on the **back-end**.
 
