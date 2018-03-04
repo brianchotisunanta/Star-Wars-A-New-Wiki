@@ -1,6 +1,6 @@
 # Star-Wars-A-New-Wiki
 
-This is a *_full-stack web application_* that utilizes _HTML5, CSS3, JavaScript, Bootstrap, jQuery_ and _Angular.js_ on the _front-end_, and _Express.js_ and _Node.js_ on the _back-end_. I created a light version of a wikipedia containing _Star Wars Movies, Characters, Planets, and Vehicles._
+This is a *_full-stack web application_* that utilizes **HTML5, CSS3, JavaScript, Bootstrap, jQuery** and **Angular.js** on the **front-end**, and **Express.js** and **Node.js** on the **back-end**. I created a light version of a wikipedia containing **Star Wars Movies, Characters, Planets, and Vehicles.**
 
 ## Technologies:
 #### HTML5
@@ -14,12 +14,12 @@ This is a *_full-stack web application_* that utilizes _HTML5, CSS3, JavaScript,
 #### Node.js
 
 ## What does my web app do:
-My app fulfills _CRUD (Create, Read, Update, Delete)_  and is able to send *_REQUEST_* from the *front-end* to the *back-end* and send a *_RESPONSE_* via _JSON_ from the *back-end* to the *front-end*, utilizing _RESTful-API_.
+My app fulfills **CRUD _(Create, Read, Update, Delete)_**  and is able to send *_REQUEST_* from the *front-end* to the *back-end* and send a **_RESPONSE_** via _JSON_ from the **back-end** to the **front-end**, utilizing **RESTful-API**.
 
-You are able to _POST_ new Star Wars Movies, Characters, Planets, and Vehicles objects with corresponding object properties with the submit forms for each individual category _(Create)_
-You are able to _VIEW_ the list of Star Wars Movies, Characters, Planets, and Vehicles on of their pages _(Read)_
-You are able to _MODIFY_ each individual Star Wars Movies, Characters, Planets, and Vehicles object properties with the UPDATE form _(UPDATE)_
-You are able to _DELETE_ every single individual Star Wars Movies, Characters, Planets, and Vehicles from the page (HTML views), _(DELETE)_
+You are able to **POST** new Star Wars Movies, Characters, Planets, and Vehicles objects with corresponding object properties with the submit forms for each individual category **(Create)**
+You are able to **VIEW** the list of Star Wars Movies, Characters, Planets, and Vehicles on of their pages **(Read)**
+You are able to **MODIFY** each individual Star Wars Movies, Characters, Planets, and Vehicles object properties with the UPDATE form **(UPDATE)**
+You are able to **DELETE** every single individual Star Wars Movies, Characters, Planets, and Vehicles from the page (HTML views), **(DELETE)**
 
 
 
