@@ -5,17 +5,17 @@ This is a *_full-stack web application_* that utilizes **HTML5, CSS3, JavaScript
 ## Web Technologies used:
 
 ### _Front-End (Client-side):_
-#### HTML5
-#### CSS3
-#### CSS Animations
-#### JavaScript
-#### Bootstrap
-#### jQuery
-#### AngularJS
+* **_HTML5_**
+* **_CSS3_**
+* **_CSS Animations_**
+* **_JavaScript_**
+* **_Bootstrap_**
+* **_jQuery_**
+* **_AngularJS_**
 
 ### _Back-End (Server-side):_
-#### Express
-#### Node.js
+* **_Express_**
+* **_Node.js_**
 
 ## What does my web app do:
 My app fulfills **_CRUD_ _(Create, Read, Update, Delete)_**  and is able to send **_REQUEST_** from the **_front-end_** to the **_back-end_** and send a **_RESPONSE_** via **_JSON_** from the **_back-end_** to the **_front-end_**, utilizing **_RESTful-API_**.
