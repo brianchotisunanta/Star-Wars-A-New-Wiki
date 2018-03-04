@@ -1,4 +1,4 @@
-# Star-Wars-A-New-Wiki
+# Star Wars: A New Wiki
 
 ## **_Check out my app on Heroku:_** **[Star Wars: A New Wiki on Heroku.com](https://star-wars-wiki.herokuapp.com/#/ "Star Wars: A New Wiki")**
 
