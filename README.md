@@ -1,6 +1,27 @@
 # Star-Wars-A-New-Wiki
 
-This is my Third (Final) Project at Redwood Code Academy. This is a full-stack application utilizing HTML, CSS, JavaScript, Bootstrap, jQuery and Angular.js on the front-end side, and Express.js and Node.js on the back-end side. I created a light version of a wikipedia containing Star Wars movies, characters, planets, and vehicles.
+This is a *_full-stack web application_* that utilizes _HTML5, CSS3, JavaScript, Bootstrap, jQuery_ and _Angular.js_ on the _front-end_, and _Express.js_ and _Node.js_ on the _back-end_. I created a light version of a wikipedia containing _Star Wars Movies, Characters, Planets, and Vehicles._
+
+## Technologies:
+#### HTML5
+#### CSS3
+#### CSS Animations
+#### JavaScript
+#### Bootstrap
+#### jQuery
+#### AngularJS
+#### Express
+#### Node.js
+
+## What does my web app do:
+My app fulfills _CRUD (Create, Read, Update, Delete)_  and is able to send *_REQUEST_* from the *front-end* to the *back-end* and send a *_RESPONSE_* via _JSON_ from the *back-end* to the *front-end*, utilizing _RESTful-API_.
+
+You are able to _POST_ new Star Wars Movies, Characters, Planets, and Vehicles objects with corresponding object properties with the submit forms for each individual category _(Create)_
+You are able to _VIEW_ the list of Star Wars Movies, Characters, Planets, and Vehicles on of their pages _(Read)_
+You are able to _MODIFY_ each individual Star Wars Movies, Characters, Planets, and Vehicles object properties with the UPDATE form _(UPDATE)_
+You are able to _DELETE_ every single individual Star Wars Movies, Characters, Planets, and Vehicles from the page (HTML views), _DELETE_
+
+
 
 ![swanw ss1](https://user-images.githubusercontent.com/24735848/32698840-b3a12bdc-c760-11e7-9a7e-ed6775efd618.png)
 ![swanw ss2](https://user-images.githubusercontent.com/24735848/32698841-b3b80104-c760-11e7-8ca0-123b0abc6387.png)
@@ -21,14 +42,3 @@ This is my Third (Final) Project at Redwood Code Academy. This is a full-stack a
 ![swanw ss17](https://user-images.githubusercontent.com/24735848/32698857-b54cdb16-c760-11e7-80ad-c508383e21b3.png)
 ![swanw ss18](https://user-images.githubusercontent.com/24735848/32698858-b56363c2-c760-11e7-9122-5232f8d6aed7.png)
 ![swanw ss19](https://user-images.githubusercontent.com/24735848/32698859-b57f0ed8-c760-11e7-85e7-75b1412901d2.png)
-
-## Technologies:
-#### HTML5
-#### CSS3
-#### CSS Animations
-#### JavaScript
-#### Bootstrap
-#### jQuery
-#### AngularJS
-#### Express
-#### Node.js
