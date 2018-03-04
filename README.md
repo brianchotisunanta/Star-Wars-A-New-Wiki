@@ -1,6 +1,7 @@
 # Star-Wars-A-New-Wiki
 
 This is a *_full-stack web application_* that utilizes **HTML5, CSS3, JavaScript, Bootstrap, jQuery** and **Angular.js** on the **front-end**, and **Express.js** and **Node.js** on the **back-end**.
+
 I created a light version of a wikipedia containing **Star Wars Movies, Characters, Planets, and Vehicles.**
 
 ## Web Technologies used:
