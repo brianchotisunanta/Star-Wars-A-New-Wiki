@@ -28,7 +28,7 @@ You are able to **_MODIFY_** each individual Star Wars Movies, Characters, Plane
 
 You are able to **_DELETE_** every single individual Star Wars Movies, Characters, Planets, and Vehicles from the page (HTML views). **_(DELETE)_**
 
-**_Lastly, I used A LOT of CSS in the this web app and I am very proud of my work_**
+**_Lastly, I used A LOT of CSS in the this web app and I am very proud of my work!!!_**
 
 
 
