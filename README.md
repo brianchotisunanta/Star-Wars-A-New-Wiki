@@ -1,4 +1,4 @@
-# Star Wars: A New Wiki
+# Star Wars: A New Wiki :smile:
 
 ## **_Check out my app on Heroku:_** **[Star Wars: A New Wiki on Heroku.com](https://star-wars-wiki.herokuapp.com/#/ "Star Wars: A New Wiki")**
 
@@ -32,9 +32,10 @@ You are able to **_MODIFY_** each individual Star Wars Movies, Characters, Plane
 
 You are able to **_DELETE_** every single individual Star Wars Movies, Characters, Planets, and Vehicles from the page (HTML views). **_(DELETE)_**
 
-**_Lastly, I used A LOT of CSS in the this web app and I am very proud of my work!!!_**
+**_Lastly, I used A LOT of CSS in the this web app and I am very proud of my work :exclamation: :exclamation: :exclamation:_**
 
 
+# Screenshots: :smile:
 
 ![swanw ss1](https://user-images.githubusercontent.com/24735848/32698840-b3a12bdc-c760-11e7-9a7e-ed6775efd618.png)
 ![swanw ss2](https://user-images.githubusercontent.com/24735848/32698841-b3b80104-c760-11e7-8ca0-123b0abc6387.png)
