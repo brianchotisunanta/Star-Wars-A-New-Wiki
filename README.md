@@ -19,7 +19,7 @@ My app fulfills _CRUD (Create, Read, Update, Delete)_  and is able to send *_REQ
 You are able to _POST_ new Star Wars Movies, Characters, Planets, and Vehicles objects with corresponding object properties with the submit forms for each individual category _(Create)_
 You are able to _VIEW_ the list of Star Wars Movies, Characters, Planets, and Vehicles on of their pages _(Read)_
 You are able to _MODIFY_ each individual Star Wars Movies, Characters, Planets, and Vehicles object properties with the UPDATE form _(UPDATE)_
-You are able to _DELETE_ every single individual Star Wars Movies, Characters, Planets, and Vehicles from the page (HTML views), _DELETE_
+You are able to _DELETE_ every single individual Star Wars Movies, Characters, Planets, and Vehicles from the page (HTML views), _(DELETE)_
 
 
 
