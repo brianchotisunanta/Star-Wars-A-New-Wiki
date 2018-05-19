@@ -1,11 +1,11 @@
 <!-- Background video in planets.html: -->
 <!-- https://www.youtube.com/watch?v=ZZq53GloUhw -->
 <div class="video-background fadeIn">
-  <div class="video-foreground">
-      <iframe width="100%" height="100%"
-      src="https://www.youtube.com/embed/ZZq53GloUhw?autoplay=1" frameborder="0" allowfullscreen volume="0">
-      </iframe>
-  </div>
+    <div class="video-foreground">
+        <iframe width="100%" height="100%"
+        src="https://www.youtube.com/embed/ZZq53GloUhw?autoplay=1" frameborder="0" allowfullscreen volume="0">
+        </iframe>
+    </div>
 </div>
 
 
@@ -14,45 +14,45 @@
 
 <!-- Click to Submit Planet button to show form field: -->
 <div class="planetSubmitButton text-center slideExpandUp">
-  <button class="btn btn-submit-planet-form" type="button" ng-show="buttonFormField" ng-click="planetSubmitButton()">Enter A New Planet</button>
+    <button class="btn btn-submit-planet-form" type="button" ng-show="buttonFormField" ng-click="planetSubmitButton()">Enter A New Planet</button>
 </div>
 
 <div class="planetForm container col-md-12">
   <!-- New Planet form field: ng-show="planetForm" -->
-  <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="planetForm" >
-    <h3 class="sectionHeader planet-information">Planet Information</h3>
+    <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="planetForm" >
+        <h3 class="sectionHeader planet-information">Planet Information</h3>
 
-    <div class="form-group col-md-12">
-      <label>Planet Name</label>
-      <input type="text" class="form-control" placeholder="Planet Name" ng-model="name">
-    </div>
+      <div class="form-group col-md-12">
+          <label>Planet Name</label>
+          <input type="text" class="form-control" placeholder="Planet Name" ng-model="name">
+      </div>
 
-    <div class="form-group col-md-12">
-      <label>Description</label>
-      <textarea class="planet-description-textbox" name="Planet Description" cols="30" rows="10" placeholder="Type description here!!!" ng-model="description"></textarea>
+      <div class="form-group col-md-12">
+          <label>Description</label>
+          <textarea class="planet-description-textbox" name="Planet Description" cols="30" rows="10" placeholder="Type description here!!!" ng-model="description"></textarea>
+      </div>
+      <!-- Submit Button ng-show="submitButton" -->
+      <button class="btn btn-submit btn-block" type="button" name="button" ng-click="submitPlanet()" ng-show="submitButton" >Submit</button>
+      <!-- Save Button ng-show="saveButton" -->
+      <button class="btn btn-save btn-block" type="button" name="button" ng-click="savePlanet()" ng-show="saveButton">Save</button>
     </div>
-    <!-- Submit Button ng-show="submitButton" -->
-    <button class="btn btn-submit btn-block" type="button" name="button" ng-click="submitPlanet()" ng-show="submitButton" >Submit</button>
-    <!-- Save Button ng-show="saveButton" -->
-    <button class="btn btn-save btn-block" type="button" name="button" ng-click="savePlanet()" ng-show="saveButton">Save</button>
-  </div>
 
 <!-- Planet image, name, description: -->
-  <div class="planetContent col-md-12 fadeIn" ng-repeat="planet in planets" ng-hide="planetInfo">
-    <div class="col-md-6">
-      <img class="planet-image text-center" src="{{planet.image}}">
+    <div class="planetContent col-md-12 fadeIn" ng-repeat="planet in planets" ng-hide="planetInfo">
+        <div class="col-md-6">
+            <img class="planet-image text-center" src="{{planet.image}}">
+        </div>
+        <div class="planet-info col-md-6">
+            <h2 class="planet-id"><span>ID: </span>{{planet.id}}</h2>
+            <h2 class="planet-name"><span>{{planet.name}}</span></h2>
+            <p class="planet-description"><span>Description: </span> {{planet.description}}</p>
+            <!-- Buttons on planetContent -->
+            <div class="edit-and-delete-buttons pull-right">
+                <!-- Edit Button -->
+                <button class="btn btn-edit" type="button" name="button" ng-click="updatePlanet(planet)">Edit</button>
+                <!-- Delete Button -->
+                <button class="btn btn-delete" type="button" name="button" ng-click="deletePlanet(planet)">Delete</button>
+            </div>
+        </div>
     </div>
-    <div class="planet-info col-md-6">
-      <h2 class="planet-id"><span>ID: </span>{{planet.id}}</h2>
-      <h2 class="planet-name"><span>{{planet.name}}</span></h2>
-      <p class="planet-description"><span>Description: </span> {{planet.description}}</p>
-      <!-- Buttons on planetContent -->
-      <div class="edit-and-delete-buttons pull-right">
-        <!-- Edit Button -->
-        <button class="btn btn-edit" type="button" name="button" ng-click="updatePlanet(planet)">Edit</button>
-        <!-- Delete Button -->
-        <button class="btn btn-delete" type="button" name="button" ng-click="deletePlanet(planet)">Delete</button>
-      </div>
-    </div>
-  </div>
 </div> <!-- Container End -->

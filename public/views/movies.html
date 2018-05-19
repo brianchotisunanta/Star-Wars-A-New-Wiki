@@ -20,47 +20,47 @@
 </div>
 
 <div class="movieForm container col-md-12">
-  <!-- New Movie form field: ng-show="movieForm" -->
-  <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="movieForm">  <!-- fadeIn -->
-    <h3 class="sectionHeader movie-information">Movie Information</h3>
+    <!-- New Movie form field: ng-show="movieForm" -->
+    <div class="row col-md-6 col-md-offset-3 fadeIn" ng-show="movieForm">  <!-- fadeIn -->
+        <h3 class="sectionHeader movie-information">Movie Information</h3>
 
-    <div class="form-group col-md-12">
-      <label>Movie Name</label>
-      <input type="text" class="form-control" placeholder="Movie Name" ng-model="name">
+        <div class="form-group col-md-12">
+            <label>Movie Name</label>
+            <input type="text" class="form-control" placeholder="Movie Name" ng-model="name">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label>Image</label>
+            <input type="text" class="form-control" placeholder="Movie Image" ng-model="image">
+        </div>
+
+        <div class="form-group col-md-12">
+            <label>Description</label>
+            <textarea class="movie-description-textbox" name="Movie Description" cols="30" rows="10" placeholder="Type description here!!!" ng-model="description"></textarea>
+        </div>
+
+        <!-- Submit Button ng-show="submitButton" -->
+        <button class="btn btn-submit btn-block" type="button" name="button" ng-click="submitMovie()" ng-show="submitButton" >Submit</button>
+        <!-- Save Button ng-show="saveButton" -->
+        <button class="btn btn-save btn-block" type="button" name="button" ng-click="saveMovie()" ng-show="saveButton" >Save</button>
     </div>
-
-    <div class="form-group col-md-12">
-      <label>Image</label>
-      <input type="text" class="form-control" placeholder="Movie Image" ng-model="image">
-    </div>
-
-    <div class="form-group col-md-12">
-      <label>Description</label>
-      <textarea class="movie-description-textbox" name="Movie Description" cols="30" rows="10" placeholder="Type description here!!!" ng-model="description"></textarea>
-    </div>
-
-    <!-- Submit Button ng-show="submitButton" -->
-    <button class="btn btn-submit btn-block" type="button" name="button" ng-click="submitMovie()" ng-show="submitButton" >Submit</button>
-    <!-- Save Button ng-show="saveButton" -->
-    <button class="btn btn-save btn-block" type="button" name="button" ng-click="saveMovie()" ng-show="saveButton" >Save</button>
-  </div>
 
 <!--Display Movie Content ng-hide="movieInfo" -->
-  <div class="movieContent col-md-12 fadeIn" ng-repeat="movie in movies" ng-hide="movieInfo"> <!-- fadeIn -->
-    <div class="col-md-6">
-      <img class="movie-image text-center" src="{{movie.image}}">
-    </div>
-    <div class="movie-info col-md-6">
-      <h2 class="movie-id"><span>ID: </span>{{movie.id}}</h2>
-      <h2 class="movie-name">{{movie.name}}</h2>
-      <p class="movie-description">{{movie.description}}</p>
-      <!-- Buttons on movieContent -->
-      <div class="edit-and-delete-buttons pull-right">
-        <!-- Edit Button -->
-        <button class="btn btn-edit" type="button" name="button" ng-click="updateMovie(movie)">Edit</button>
-        <!-- Delete Button -->
-        <button class="btn btn-delete" type="button" name="button" ng-click="deleteMovie(movie)">Delete</button>
-      </div>    <!-- End of Buttons on movieContent -->
-    </div>
-  </div> <!--End of Movie Content -->
+    <div class="movieContent col-md-12 fadeIn" ng-repeat="movie in movies" ng-hide="movieInfo"> <!-- fadeIn -->
+        <div class="col-md-6">
+            <img class="movie-image text-center" src="{{movie.image}}">
+        </div>
+        <div class="movie-info col-md-6">
+            <h2 class="movie-id"><span>ID: </span>{{movie.id}}</h2>
+            <h2 class="movie-name">{{movie.name}}</h2>
+            <p class="movie-description">{{movie.description}}</p>
+            <!-- Buttons on movieContent -->
+            <div class="edit-and-delete-buttons pull-right">
+                <!-- Edit Button -->
+                <button class="btn btn-edit" type="button" name="button" ng-click="updateMovie(movie)">Edit</button>
+                <!-- Delete Button -->
+                <button class="btn btn-delete" type="button" name="button" ng-click="deleteMovie(movie)">Delete</button>
+            </div>    <!-- End of Buttons on movieContent -->
+        </div>
+    </div> <!--End of Movie Content -->
 </div> <!-- Container End -->
