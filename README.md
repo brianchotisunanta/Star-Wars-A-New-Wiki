@@ -37,7 +37,7 @@ You are able to **_DELETE_** every single individual Star Wars Movies, Character
 
 # Screenshots: :smile:
 
-## Desktop screenshots:
+## _Desktop screenshots:_
 
 ![swanw ss1](https://user-images.githubusercontent.com/24735848/32698840-b3a12bdc-c760-11e7-9a7e-ed6775efd618.png)
 ![swanw ss2](https://user-images.githubusercontent.com/24735848/32698841-b3b80104-c760-11e7-8ca0-123b0abc6387.png)
@@ -54,7 +54,7 @@ You are able to **_DELETE_** every single individual Star Wars Movies, Character
 ![swanw ss13](https://user-images.githubusercontent.com/24735848/32698853-b4dd3194-c760-11e7-821b-26d349314c50.png)
 ![swanw ss14](https://user-images.githubusercontent.com/24735848/32698854-b4f4582e-c760-11e7-84b0-5c0adb7afd64.png)
 
-## Mobile (Responsive) screenshots:
+## _Mobile (Responsive) screenshots:_
 
 ![swanw ss15](https://user-images.githubusercontent.com/24735848/32698855-b520ae7e-c760-11e7-8485-b5b60185feab.png)
 ![swanw ss16](https://user-images.githubusercontent.com/24735848/32698856-b53753ea-c760-11e7-9e1e-34307c6e41b9.png)
